@@ -1,0 +1,11 @@
+.DS_Store
+
+boxes/*
+/.vagrant
+
+*.gem
+.bundle
+tmp/
+
+*.swo
+*.swp
