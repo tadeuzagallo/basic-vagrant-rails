@@ -30,7 +30,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # your network.
   config.vm.network "public_network"
 
-  config.vm.provision :shell, path: 'bootstrap.sh'
+  config.vm.provision :shell, path: 'system.sh', privileged: true
+  config.vm.provision :shell, path: 'ruby_and_rails.sh', privileged: false
 
   # If true, then any SSH connections made will enable agent forwarding.
   # Default value: false
